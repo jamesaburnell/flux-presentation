@@ -1,10 +1,14 @@
 var AppConstants = require('../constants/app-constants');
 var AppDispatcher = require('../dispatchers/app-dispatcher');
 
+
+//all of these call handleViewAction from our add-dispatcher
 var AppActions = {
   addItem: function(item){
     AppDispatcher.handleViewAction({
+      //comes from our app-constants
       actionType: AppConstants.ADD_ITEM,
+      //also adds an item to the cart
       item: item
     })
   },

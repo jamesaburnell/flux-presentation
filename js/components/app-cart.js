@@ -24,7 +24,7 @@ var Cart = React.createClass({
       var subtotal = item.cost * item.qty;
       total += subtotal;
       return (
-          <tr key={i}>
+          <tr className="cartRow" key={i}>
             <td><RemoveFromCart index={i} /></td>
             <td>{item.title}</td>
             <td>{item.qty}</td>

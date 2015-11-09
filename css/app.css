@@ -16,3 +16,11 @@
 #todo-list li .edit {
   display: inline;
 }
+
+#todoapp {
+	background-color: aquamarine;
+}
+
+.cartRow {
+    background-color: aqua;
+}
